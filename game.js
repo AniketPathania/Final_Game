@@ -139,7 +139,7 @@ function StaminaSystem(){
   
     }
 
-    if(Stamina > 89 && Stamina < 94){
+    if(Stamina > 89 && Stamina < 96){
       lifebar3.x = lifebar.x+25;
       lifebar3.y = lifebar.y+24;
     }
@@ -218,9 +218,9 @@ function StaminaRegeneration(){
 }
 
 function HealthRegeneration(){
-  if(frameCount%150===0){
+  if(frameCount%200===0){
     if(Health < 96){
-    Health = Health+2;
+    Health = Health+1;
     }
   }
 
@@ -251,7 +251,7 @@ function DamageSystem(enemyC){
 
 function DamageSystem1(enemyC){
   if(isTouching(playercollision,enemyC)){
-      Health = Health-0.5;
+      Health = Health-0.6;
       if(keyWentDown("space")){
         if(Stamina > 0){
           EnemyHP2 = EnemyHP2-1;
@@ -262,7 +262,7 @@ function DamageSystem1(enemyC){
 
 function DamageSystem2(enemyC){
   if(isTouching(playercollision,enemyC)){
-      Health = Health-0.2;
+      Health = Health-0.4;
       if(keyWentDown("space")){
         if(Stamina > 0){
           EnemyHP3 = EnemyHP3-1;
@@ -273,7 +273,7 @@ function DamageSystem2(enemyC){
 
 function DamageSystem3(enemyC){
   if(isTouching(playercollision,enemyC)){
-      Health = Health-0.3;
+      Health = Health-0.5;
       if(keyWentDown("space" )){
         if(Stamina > 0){
           EnemyHP4 = EnemyHP4-1;
