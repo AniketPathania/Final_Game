@@ -240,7 +240,7 @@ function General(){
 
 function DamageSystem(enemyC){
   if(isTouching(playercollision,enemyC)){
-      Health = Health-0.1;
+      Health = Health-0.4;
       if(keyWentDown("space") ){
         if(Stamina > 0){
           EnemyHP = EnemyHP-1;
