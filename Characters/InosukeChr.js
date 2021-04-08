@@ -8,7 +8,7 @@ function UpArrowInosuke(){
           if(keyWentUp(UP_ARROW)){
             inosuke.velocityY = 0;
           }
-          if(keyWentDown("space") && direction == "up" && Stamina > 10){
+          if(keyWentDown("space") && direction == "up" && Stamina > 9){
             inosuke.addImage(inosukeIMGbacksword);
           }
           if(keyWentUp("space") && direction == "up" ){
@@ -33,7 +33,7 @@ function DownArrowInosuke(){
     inosuke.velocityY = 0;
 
   }
-  if(keyWentDown("space") && direction == "down" && Stamina > 10){
+  if(keyWentDown("space") && direction == "down" && Stamina > 9){
     inosuke.addImage(inosukeIMGfrontsword);
 
   }
@@ -60,7 +60,7 @@ function LeftArrowInosuke(){
         inosuke.velocityX = 0;
       }
     
-      if(keyWentDown("space") && direction == "left" && Stamina > 10){
+      if(keyWentDown("space") && direction == "left" && Stamina > 9){
         inosuke.addImage(inosukeIMGleftsword);
       }
       
@@ -84,7 +84,7 @@ function RightArrowInosuke(){
       if(keyWentUp(RIGHT_ARROW)){
         inosuke.velocityX = 0;
       }
-      if(keyWentDown("space") && direction == "right" && Stamina > 10){
+      if(keyWentDown("space") && direction == "right" && Stamina > 9){
         inosuke.addImage(inosukeIMGrightsword);
       }
        if(keyWentUp("space") && direction == "right"){
