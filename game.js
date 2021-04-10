@@ -240,7 +240,7 @@ function General(){
 
 function DamageSystem(enemyC){
   if(isTouching(playercollision,enemyC)){
-      Health = Health-0.4;
+      Health = Health-0.3;
       if(keyWentDown("space") ){
         if(Stamina > 0){
           EnemyHP = EnemyHP-1;
@@ -251,7 +251,7 @@ function DamageSystem(enemyC){
 
 function DamageSystem1(enemyC){
   if(isTouching(playercollision,enemyC)){
-      Health = Health-0.6;
+      Health = Health-0.4;
       if(keyWentDown("space")){
         if(Stamina > 0){
           EnemyHP2 = EnemyHP2-1;
@@ -273,7 +273,7 @@ function DamageSystem2(enemyC){
 
 function DamageSystem3(enemyC){
   if(isTouching(playercollision,enemyC)){
-      Health = Health-0.5;
+      Health = Health-0.3;
       if(keyWentDown("space" )){
         if(Stamina > 0){
           EnemyHP4 = EnemyHP4-1;
